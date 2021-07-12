@@ -1,0 +1,30 @@
+# public class string {
+
+	public static void main(String[] args) {
+		String str = " 대한민국 우리나라 대장 ";
+		System.out.println(str.length()); //문자열 길이를 가져옴
+		
+		str = str.trim(); //문자열 앞뒤에 공백을 제거
+		//"대한민국 우리나라 대장"
+		System.out.println(str.indexOf("대")); //문자열 앞에서 부터 글자를 찾음
+		System.out.println(str.lastIndexOf("대")); // 문자열 뒤에서 부터 글자를 찾음
+	
+		System.out.println(str.charAt(8)); //특정 위치에 있는 문자 찾기
+		
+		str = str.replace("우리", "메롱"); //치환
+		//"대한민국 메롱나라 대장"
+		
+		str = str.substring(5); //해당 위치부터 문자열 끝까지 자르기
+		//"메롱나라 대장"
+		
+		str = str.substring(1,4); //해당 위치부터 다음 위치까지 자르기
+		System.out.println(str);
+		
+		str = "abcDEfG";
+		str = str.toUpperCase(); //모든 문자를 대문자로
+		str = str.toLowerCase(); //모든 문자를 소문자로
+		
+				
+	}
+
+}
